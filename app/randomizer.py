@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from random import randint
 # hehe
+# beipboep
 app = FastAPI()
 
 @app.get("/percentage")
