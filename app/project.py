@@ -1,8 +1,25 @@
-#uvicorn song:app --reload
-#http://127.0.0.1:8000/
 from fastapi import FastAPI
 from pydantic import BaseModel
+from fastapi.middleware.cors import CORSMiddleware
 import random
+
+app = FastAPI()
+origins = [
+    "http://localhost/",
+    "http://localhost:8080/",
+    "https://localhost.tiangolo.com/",
+    "http://127.0.0.1:5500/"
+    "https://rgoeyvaerts.github.io/API-site"
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=[""],
+    allow_headers=[""],
+)
+
 
 drivers=["Andreas Bakkerud","Johan Kristoffersson","Mattias Ekström","NICLAS GRÖNHOLM","Robin Larsson","OLE CHRISTIAN VEIBY","JĀNIS BAUMANIS","SONDRE EVJEN","ENZO IDE","ANTON MARKLUND","JEAN BAPTISTE DUBOURG"]
 teams=["Monster Energy RX Cartel","Kristoffersson Motorsport","EKS RX","Construction Equipment Dealer Team",]
@@ -22,7 +39,7 @@ class teamOut(BaseModel):
 
 
 
-app = FastAPI()
+
 @app.get("/drivers")
 async def root():
     return {random.choice(list(drivers))}
