@@ -9,7 +9,7 @@ origins = [
     "http://localhost:8080/",
     "https://localhost.tiangolo.com/",
     "http://127.0.0.1:5500/"
-    "https://rgoeyvaerts.github.io/API-site"
+    "https://rgoeyvaerts.github.io/API-site/"
 ]
 
 app.add_middleware(
