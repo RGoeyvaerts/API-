@@ -8,21 +8,22 @@ origins = [
     "http://localhost/",
     "http://localhost:8080/",
     "https://localhost.tiangolo.com/",
-    "http://127.0.0.1:5500/",
-    "https://rgoeyvaerts.github.io"
+    "http://127.0.0.1:5500/"
+    "https://rgoeyvaerts.github.io/API-site"
 ]
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
     allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_methods=[""],
+    allow_headers=[""],
 )
 
 
-drivers=["Andreas Bakkerud","Johan Kristoffersson","Mattias Ekström","NICLAS GRÖNHOLM","Robin Larsson","OLE CHRISTIAN VEIBY","JĀNIS BAUMANIS","SONDRE EVJEN","ENZO IDE","ANTON MARKLUND","JEAN BAPTISTE DUBOURG"]
-teams=["Monster Energy RX Cartel","Kristoffersson Motorsport","EKS RX","Construction Equipment Dealer Team",]
+drivers=["Andreas Bakkerud","Johan Kristoffersson","Mattias Ekström","NICLAS GRÖNHOLM","Robin Larsson","OLE CHRISTIAN VEIBY","JĀNIS BAUMANIS","SONDRE EVJEN","ENZO IDE","ANTON MARKLUND","JEAN BAPTISTE DUBOURG","KOBE PAUWELS",]
+teams=["Monster Energy RX Cartel","Kristoffersson Motorsport","EKS RX","Construction Equipment Dealer Team","#YellowSquad","JC Raceteknik","EKS","SET Promotion","DA Racing","Volland Racing KFT",]
+
 
 class driverIn(BaseModel):
     username: str
