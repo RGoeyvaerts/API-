@@ -9,7 +9,7 @@ origins = [
     "http://localhost:8080/",
     "https://localhost.tiangolo.com/",
     "http://127.0.0.1:5500/",
-    "https://rgoeyvaerts.github.io/API-site"
+    "https://rgoeyvaerts.github.io"
 ]
 
 app.add_middleware(
@@ -21,9 +21,8 @@ app.add_middleware(
 )
 
 
-drivers=["Andreas Bakkerud","Johan Kristoffersson","Mattias Ekström","NICLAS GRÖNHOLM","Robin Larsson","OLE CHRISTIAN VEIBY","JĀNIS BAUMANIS","SONDRE EVJEN","ENZO IDE","ANTON MARKLUND","JEAN BAPTISTE DUBOURG","KOBE PAUWELS",]
-teams=["Monster Energy RX Cartel","Kristoffersson Motorsport","EKS RX","Construction Equipment Dealer Team","#YellowSquad","JC Raceteknik","EKS","SET Promotion","DA Racing","Volland Racing KFT",]
-
+drivers=["Andreas Bakkerud","Johan Kristoffersson","Mattias Ekström","NICLAS GRÖNHOLM","Robin Larsson","OLE CHRISTIAN VEIBY","JĀNIS BAUMANIS","SONDRE EVJEN","ENZO IDE","ANTON MARKLUND","JEAN BAPTISTE DUBOURG"]
+teams=["Monster Energy RX Cartel","Kristoffersson Motorsport","EKS RX","Construction Equipment Dealer Team",]
 
 class driverIn(BaseModel):
     username: str
@@ -56,6 +55,3 @@ async def create_driver(driver: driverIn):
 @app.post("/teams/", response_model=teamOut)
 async def create_team(team: teamIn):
     return team
-
-
-
