@@ -21,8 +21,9 @@ app.add_middleware(
 )
 
 
-drivers=["Andreas Bakkerud","Johan Kristoffersson","Mattias Ekström","NICLAS GRÖNHOLM","Robin Larsson","OLE CHRISTIAN VEIBY","JĀNIS BAUMANIS","SONDRE EVJEN","ENZO IDE","ANTON MARKLUND","JEAN BAPTISTE DUBOURG"]
-teams=["Monster Energy RX Cartel","Kristoffersson Motorsport","EKS RX","Construction Equipment Dealer Team",]
+drivers=["Andreas Bakkerud","Johan Kristoffersson","Mattias Ekström","NICLAS GRÖNHOLM","Robin Larsson","OLE CHRISTIAN VEIBY","JĀNIS BAUMANIS","SONDRE EVJEN","ENZO IDE","ANTON MARKLUND","JEAN BAPTISTE DUBOURG","KOBE PAUWELS","MARIUS SOLBERG HANSEN","VIKTOR VRANCKX","ISAK SJÖKVIST","PATRICK O'DONOVAN",]
+teams=["Monster Energy RX Cartel","Kristoffersson Motorsport","EKS RX","Construction Equipment Dealer Team","#YellowSquad","JC Raceteknik","EKS","SET Promotion","DA Racing","Volland Racing KFT","QEV",]
+
 
 class driverIn(BaseModel):
     username: str
