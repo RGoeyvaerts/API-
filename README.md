@@ -30,6 +30,8 @@ bij de post /teams/ heb ik opnieuw gebruik gemaakt van de json file maar deze ke
 ![image](https://user-images.githubusercontent.com/91118302/202899503-74bad05e-a604-4b16-9397-112f9595854f.png)
 ![image](https://user-images.githubusercontent.com/91118302/202908146-1e24f95f-68d5-4eff-b49e-5ead4a4c98cb.png)
 ![image](https://user-images.githubusercontent.com/91118302/202908189-4e66ce7d-f044-44de-a40b-3d09943748fc.png)
+![image](https://user-images.githubusercontent.com/91118302/202924412-25172e70-d1af-4b90-9305-c07a371cce04.png)
+
 
 
 
