@@ -38,7 +38,6 @@ app.add_middleware(
 
 
 drivers=["Andreas Bakkerud","Johan Kristoffersson","Mattias Ekström","NICLAS GRÖNHOLM","Robin Larsson","OLE CHRISTIAN VEIBY","JĀNIS BAUMANIS","SONDRE EVJEN","ENZO IDE","ANTON MARKLUND","JEAN BAPTISTE DUBOURG","KOBE PAUWELS","MARIUS SOLBERG HANSEN","VIKTOR VRANCKX","ISAK SJÖKVIST","PATRICK O'DONOVAN"]
-teams=["Monster Energy RX Cartel","Kristoffersson Motorsport","EKS RX","Construction Equipment Dealer Team","#YellowSquad","JC Raceteknik","EKS","SET Promotion","DA Racing","Volland Racing KFT",]
 
 
 
@@ -49,17 +48,13 @@ class teamIn(BaseModel):
 
 @app.get("/drivers2")
 async def root():
-  return l[random.randrange(1,len(l),1)]
-
+  return str(l[random.randrange(1,len(l),1)])
 
 
 @app.get("/drivers")
 async def root():
     return {random.choice(list(drivers))}
 
-@app.get("/teams")
-async def root():
-    return random.choice(teams)
 
 
 @app.post("/teams/", response_model=teamIn)
