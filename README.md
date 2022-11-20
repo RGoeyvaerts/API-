@@ -10,10 +10,10 @@ https://project-service-rgoeyvaerts.cloud.okteto.net/
 
 
 
-![image](https://user-images.githubusercontent.com/91118302/202909310-7c504167-d91b-4495-b88c-7db2bcb07105.png)
+![image](https://user-images.githubusercontent.com/91118302/202924221-3c145428-4923-4528-acb3-cf262be36535.png)
 
-ik heb 2 get request maak waarin ik bij /drivers uit een lijst een willekurig item kies en bij /drivers2 een willekeurig item uit een dictionary.
-bij de post heb ik opniuw gebruik gemaakt van de dictionary en door de lengte van de dictionary +1 te laten doen komt de nieuwe data mooi achter de originele data.
+ik heb 2 get request maak waarin ik bij /drivers uit een lijst een willekurig item kies en bij /drivers2 een willekeurig item uit de json file
+bij de post /teams/ heb ik opnieuw gebruik gemaakt van de json file maar deze keer open ik hem opnieuw in write mode om de nieuwe data in de file te kunnen schrijven.
 ![image](https://user-images.githubusercontent.com/91118302/202908979-5b43dcb3-390c-4087-8599-ea954a83c8e4.png)
 ![image](https://user-images.githubusercontent.com/91118302/202908990-a26d7e19-ac6d-480c-809e-73eaabdd028a.png)
 ![image](https://user-images.githubusercontent.com/91118302/202909013-155c979d-b435-425f-bd03-d4498fcd6280.png)
