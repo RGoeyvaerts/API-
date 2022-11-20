@@ -4,7 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 import random
 import json
 
-with open("./data.json",encoding = 'utf-8') as f:
+with open("app/data.json",encoding = 'utf-8') as f:
     content = json.loads(f.read())
 
 
