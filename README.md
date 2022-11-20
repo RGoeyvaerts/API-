@@ -17,8 +17,10 @@ bij de post /teams/ heb ik opnieuw gebruik gemaakt van de json file maar deze ke
 ![image](https://user-images.githubusercontent.com/91118302/202908979-5b43dcb3-390c-4087-8599-ea954a83c8e4.png)
 ![image](https://user-images.githubusercontent.com/91118302/202926607-4efb5d0d-968a-46fd-9ecc-2a210f0bdac6.png)
 
-![image](https://user-images.githubusercontent.com/91118302/202908990-a26d7e19-ac6d-480c-809e-73eaabdd028a.png)
+![image](https://user-images.githubusercontent.com/91118302/202926644-51ef3f79-4296-47ea-8cc1-a3c3d4168115.png)
 ![image](https://user-images.githubusercontent.com/91118302/202909013-155c979d-b435-425f-bd03-d4498fcd6280.png)
+![image](https://user-images.githubusercontent.com/91118302/202926656-424b2cf9-db27-4cff-8981-d9766beddd59.png)
+
 
 ![image](https://user-images.githubusercontent.com/91118302/202908060-ac477771-0b8e-4c08-8f54-38b6b467e8c8.png)
 ![image](https://user-images.githubusercontent.com/91118302/202910225-ed3435e3-62b8-4218-a8a4-8bbd1d2b7f02.png)
