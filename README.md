@@ -35,7 +35,7 @@ Foto van de front end.
 
 
 
-
+Foto's van de request resultaten op postman:
 
 ![image](https://user-images.githubusercontent.com/91118302/202899503-74bad05e-a604-4b16-9397-112f9595854f.png)
 
