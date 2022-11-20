@@ -2,7 +2,9 @@
 ik heb Rallycross gekozen als onderwerp voor dit project omdat ik dit al volg sinds 2017 en het me wel leuk leek om hier een API over te maken.
 
 https://rgoeyvaerts.github.io/API-site/
+
 https://github.com/RGoeyvaerts/API-site
+
 https://project-service-rgoeyvaerts.cloud.okteto.net/
 
 
