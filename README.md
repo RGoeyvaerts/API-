@@ -24,8 +24,10 @@ bij de post /teams/ heb ik opnieuw gebruik gemaakt van de json file maar deze ke
 
 ![image](https://user-images.githubusercontent.com/91118302/202910225-ed3435e3-62b8-4218-a8a4-8bbd1d2b7f02.png)
 
-dit is de code die voor de styling zorgt van de site.
+dit is de code die voor de styling zorgt van de front end.
 ![image](https://user-images.githubusercontent.com/91118302/202926502-1c2ea4f5-91b3-4488-96e5-bfd7d5fe62d4.png)
+
+deze code zorgt voor de buttons die de get requests oproepen en de data die ze oproepen displayen op de front end.
 ![image](https://user-images.githubusercontent.com/91118302/202923882-73258a6e-83d9-4cc1-a9ee-a89a064ff8a4.png)
 
 
@@ -33,6 +35,9 @@ dit is de code die voor de styling zorgt van de site.
 
 
 ![image](https://user-images.githubusercontent.com/91118302/202899503-74bad05e-a604-4b16-9397-112f9595854f.png)
+
+foto van de front end.
+
 ![image](https://user-images.githubusercontent.com/91118302/202908146-1e24f95f-68d5-4eff-b49e-5ead4a4c98cb.png)
 ![image](https://user-images.githubusercontent.com/91118302/202908189-4e66ce7d-f044-44de-a40b-3d09943748fc.png)
 ![image](https://user-images.githubusercontent.com/91118302/202924412-25172e70-d1af-4b90-9305-c07a371cce04.png)
