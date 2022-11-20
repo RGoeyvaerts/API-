@@ -29,10 +29,11 @@ deze code zorgt voor de buttons die de get requests oproepen en de data die ze h
 
 ![image](https://user-images.githubusercontent.com/91118302/202926502-1c2ea4f5-91b3-4488-96e5-bfd7d5fe62d4.png)
 
+Foto van de front end.
 
 ![image](https://user-images.githubusercontent.com/91118302/202923882-73258a6e-83d9-4cc1-a9ee-a89a064ff8a4.png)
 
-foto van de front end.
+
 
 
 
