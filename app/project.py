@@ -8,21 +8,10 @@ with open("app/data.json",encoding = 'utf-8') as f:
     content = json.loads(f.read())
 
 
-
-
-
-
-l={1:{"drivernumber":13,"name":"Andreas Bakkerud","team":"Monster Energy RX Cartel"},2:{"drivernumber":4,"name":"Robin Larsson","team":"Monster Energy RX Cartel"},3:{"drivernumber":1,"name":"Johan Kristoffersson","team":"Kristoffersson Motorsport"},4:{"drivernumber":1,"name":"Mattias Ekström","team":"EKS RX"},5:{"drivernumber":68,"name":"Niclas Gronhölm","team":"Construction Equipment Dealer Team"},6:{"drivernumber":52,"name":"OLE CHRISTIAN VEIBY","team":"Kristoffersson Motorsport"},7:{"drivernumber":6,"name":"JĀNIS BAUMANIS","team":"#YellowSquad"},8:{"drivernumber":69,"name":"Sondre Evjen","team":"JC Raceteknik"},9:{"drivernumber":91,"name":"JĀNIS BAUMANIS","team":"#YellowSquad"},7:{"drivernumber":6,"name":"Enzo Ide","team":"EKS"}}
-
-
-
-
-
-
+winner = random.choice(content)
+winner = str(winner)
 
 app = FastAPI()
-
-
 origins = [
     "http://localhost/",
     "http://localhost:8080/",
@@ -40,9 +29,8 @@ app.add_middleware(
 )
 
 
-
-drivers=["Andreas Bakkerud","Johan Kristoffersson","Mattias Ekström","NICLAS GRÖNHOLM","Robin Larsson","OLE CHRISTIAN VEIBY","JĀNIS BAUMANIS","SONDRE EVJEN","ENZO IDE","ANTON MARKLUND","JEAN BAPTISTE DUBOURG","KOBE PAUWELS","MARIUS SOLBERG HANSEN","VIKTOR VRANCKX","ISAK SJÖKVIST","PATRICK O'DONOVAN"]
-
+drivers=["Andreas Bakkerud","Johan Kristoffersson","Mattias Ekström","NICLAS GRÖNHOLM","Robin Larsson","OLE CHRISTIAN VEIBY","JĀNIS BAUMANIS","SONDRE EVJEN","ENZO IDE","ANTON MARKLUND","JEAN BAPTISTE DUBOURG","KOBE PAUWELS","MARIUS SOLBERG HANSEN","VIKTOR VRANCKX","ISAK SJÖKVIST","PATRICK O'DONOVAN",]
+teams=["Monster Energy RX Cartel","Kristoffersson Motorsport","EKS RX","Construction Equipment Dealer Team","#YellowSquad","JC Raceteknik","EKS","SET Promotion","DA Racing","Volland Racing KFT","QEV",]
 
 
 class teamIn(BaseModel):
@@ -52,20 +40,28 @@ class teamIn(BaseModel):
 
 @app.get("/drivers2")
 async def root():
-  return str(l[random.randrange(1,len(l),1)])
+    winner = random.choice(content)
+    winner = str(winner)
 
+    return {winner}
 
 @app.get("/drivers")
 async def root():
     return {random.choice(list(drivers))}
 
+@app.get("/teams")
+async def root():
+    return {random.choice(teams)}
 
 
 @app.post("/teams/", response_model=teamIn)
 async def create_team(team: teamIn):
-    l[len(l)+1]=team
-    print(l)
+    content.append(team)
+    # 3. Write json file
+    with open("data.json", "w") as file:
+        json.dump(content, file,default=lambda o: o.__dict__,
+            sort_keys=True, indent=4)
     return team
 
 
-
+f.close()
