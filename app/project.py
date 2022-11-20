@@ -2,6 +2,14 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 import random
+import json
+
+with open("data.json",encoding = 'utf-8') as f:
+    content = json.loads(f.read())
+
+
+winner = random.choice(content)
+winner = str(winner)
 
 app = FastAPI()
 origins = [
@@ -25,21 +33,17 @@ drivers=["Andreas Bakkerud","Johan Kristoffersson","Mattias Ekström","NICLAS GR
 teams=["Monster Energy RX Cartel","Kristoffersson Motorsport","EKS RX","Construction Equipment Dealer Team","#YellowSquad","JC Raceteknik","EKS","SET Promotion","DA Racing","Volland Racing KFT","QEV",]
 
 
-class driverIn(BaseModel):
-    username: str
-class driverOut(BaseModel):
-    username: str
-
-
-
 class teamIn(BaseModel):
-    username: str
-class teamOut(BaseModel):
-    username: str
+    name:str
+    team:str
+    drivernumber:int
 
+@app.get("/drivers2")
+async def root():
+    winner = random.choice(content)
+    winner = str(winner)
 
-
-
+    return {winner}
 
 @app.get("/drivers")
 async def root():
@@ -49,10 +53,15 @@ async def root():
 async def root():
     return {random.choice(teams)}
 
-@app.post("/drivers/", response_model=driverOut)
-async def create_driver(driver: driverIn):
-    return driver
 
-@app.post("/teams/", response_model=teamOut)
+@app.post("/teams/", response_model=teamIn)
 async def create_team(team: teamIn):
+    content.append(team)
+    # 3. Write json file
+    with open("data.json", "w") as file:
+        json.dump(content, file,default=lambda o: o.__dict__,
+            sort_keys=True, indent=4)
     return team
+
+
+f.close()
