@@ -15,6 +15,8 @@ https://project-service-rgoeyvaerts.cloud.okteto.net/
 ik heb 2 get request maak waarin ik bij /drivers uit een lijst een willekurig item kies en bij /drivers2 een willekeurig item uit de json file
 bij de post /teams/ heb ik opnieuw gebruik gemaakt van de json file maar deze keer open ik hem opnieuw in write mode om de nieuwe data in de file te kunnen schrijven.
 ![image](https://user-images.githubusercontent.com/91118302/202908979-5b43dcb3-390c-4087-8599-ea954a83c8e4.png)
+![image](https://user-images.githubusercontent.com/91118302/202926607-4efb5d0d-968a-46fd-9ecc-2a210f0bdac6.png)
+
 ![image](https://user-images.githubusercontent.com/91118302/202908990-a26d7e19-ac6d-480c-809e-73eaabdd028a.png)
 ![image](https://user-images.githubusercontent.com/91118302/202909013-155c979d-b435-425f-bd03-d4498fcd6280.png)
 
