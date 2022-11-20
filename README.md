@@ -23,6 +23,8 @@ bij de post /teams/ heb ik opnieuw gebruik gemaakt van de json file maar deze ke
 
 
 ![image](https://user-images.githubusercontent.com/91118302/202910225-ed3435e3-62b8-4218-a8a4-8bbd1d2b7f02.png)
+
+dit is de code die voor de styling zorgt van de site.
 ![image](https://user-images.githubusercontent.com/91118302/202926502-1c2ea4f5-91b3-4488-96e5-bfd7d5fe62d4.png)
 ![image](https://user-images.githubusercontent.com/91118302/202923882-73258a6e-83d9-4cc1-a9ee-a89a064ff8a4.png)
 
