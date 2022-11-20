@@ -4,6 +4,7 @@ ik heb Rallycross gekozen als onderwerp voor dit project omdat ik dit al volg si
 
 
 ![image](https://user-images.githubusercontent.com/91118302/202909310-7c504167-d91b-4495-b88c-7db2bcb07105.png)
+
 ik heb 2 get request maak waarin ik bij /drivers uit een lijst een willekurig item kies en bij /drivers2 een willekeurig item uit een dictionary
 ![image](https://user-images.githubusercontent.com/91118302/202908979-5b43dcb3-390c-4087-8599-ea954a83c8e4.png)
 ![image](https://user-images.githubusercontent.com/91118302/202908990-a26d7e19-ac6d-480c-809e-73eaabdd028a.png)
